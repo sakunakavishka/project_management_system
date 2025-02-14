@@ -3,9 +3,11 @@
     <h4 class="text-white text-center" id="usertype">{{ Auth::user()->usertype }}</h4>
     <hr>
     <ul class="list-unstyled">
+        <li><a href="{{ route('projects.index') }}" class="text-white text-decoration-none"><i class="fas fa-plus me-2"></i>Project Register</a></li>
         <li><a href="{{ route('project_types.index') }}" class="text-white text-decoration-none"><i class="fas fa-plus me-2"></i>Add New Project Type</a></li>
+       
     </ul>
-    {{-- <a href="#"><i class="fas fa-book me-2"></i></a>
+    {{-- <a href="projects.index"><i class="fas fa-book me-2"></i></a>
     <a href="#"><i class="fas fa-home me-2"></i> </a>
     <a href="#"><i class="fas fa-home me-2"></i></a>
     <a href="#"><i class="fas fa-home me-2"></i> </a> --}}
