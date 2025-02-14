@@ -14,4 +14,9 @@ class ProjectType extends Model
     {
         return $this->hasMany(ProjectSubcategory::class);
     }
+  
+    public function projects()
+    {
+        return $this->hasMany(Project::class);
+    }
 }
